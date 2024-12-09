@@ -1,0 +1,208 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.container-fluid{
+    padding-right: calc(var(--bs-gutter-x)* -.5);
+    padding-left: calc(var(--bs-gutter-x)* -.5);
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.img__section {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.image__container img {
+    max-width: 80%;
+    height: auto;
+    margin: 50px;
+}
+
+.login__section {
+    flex: 1;
+    background-color: #317df4;
+    background-image: linear-gradient(to bottom right, #317df4, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+.login__box h2 {
+    color: #317DF4;
+    margin-bottom: px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.login__box p {
+    color: #1E1E1E;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.login__box form {
+    width: 100%;
+}
+
+.login__box .form-group {
+    margin-bottom: 20px;
+}
+
+.login__box .form-control {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-group label{
+    font-weight: 500;
+    font-size: 18px; 
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    background: #F3F8FF;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.login__box .btn-primary {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.login__box .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-left: auto; /* Pushes the "Forgot Password?" link to the right */
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-check .remember__me {
+    margin-left: 5px; /* Adds a little space between the checkbox and label */
+}
+
+.login-box-img{
+    width: 15px;
+    height: 50px;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+
+.login-box-img img{
+    margin-top: -30px;
+}
+
+/* Responsive styling */
+/* @media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .login__section, .img__section {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .image__container img {
+        max-width: 100%;
+    }
+
+    .login__box {
+        width: 90%;
+        max-width: none;
+    }
+    
+} */
+
+
+@media screen and (max-width: 1150px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .image__container img {
+        margin:10px;
+    }
+
+    .login__box {
+        margin: 10px;    
+        padding: 15px;
+    }
+
+    .login-box-img img{
+        width: 150px;
+        margin-top: -45px;
+        margin-left: 25px;
+    }
+    
+    .login__box .btn-primary {
+        width: 40%;
+        padding: 10px;
+        font-size: 1.1rem;
+        background-color: #007bff;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 536px) {
+   
+    .login-box-img img{
+            width: 120px;
+            margin-top: -25px;
+            margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .login-box-img img{
+        width: 100px;
+        margin-top: -10px;
+        margin-left: 20px;
+}
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container h3 {
+    font-weight: bold;
+  }
+  
+  .table {
+    background-color: #f8f9fa;
+  }
+  
+  .product-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  
+  .badge-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .badge-warning {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .badge-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-primary i, .btn-danger i {
+    font-size: 0.9rem;
+  }
+
+  .table__container{
+    background-color: #fafafa;
+  }
+
+  tbody tr-{
+    margin: 10px;
+    background-color:#fff;
+  }
+  

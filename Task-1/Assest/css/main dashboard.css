@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 278px;
+    height: 100vh;
+    background-color: #007bff;
+    /* Adjust the color as needed */
+    padding: 15px;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+/* 
+.main-content {
+    margin-left: 20px;
+    width: calc(80% - 280px);
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Header (Navbar) */
+header{
+    background-color: #ECF4FF;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 280px;
+    /* Adjust to align with sidebar */
+    width: calc(100% - 280px);
+    /* width: 85%; */
+    background-color: #ECF4FF;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Content that scrolls */
+.main-content .content-area {
+    margin-top: 80px;
+    /* Adjust to give space for the fixed navbar */
+    padding: 20px;
+    /* height: calc(100vh - 80px); */
+    overflow-y: auto;
+}
+
+.nav__notification {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.profile__section {
+    padding: 5px 15px;
+}
+
+.profile__image {
+    width: 45px;
+    height: 45px;
+}
+
+.profile__name {
+    font-weight: bold;
+}
+
+.profile__email {
+    font-size: 0.9rem;
+}
+
+.main-content {
+    margin-left: 280px;
+}
+
+.card {
+    border-radius: 15px;
+
+}
+
+.card h5 {
+    font-size: 24px;
+}
+
+.bg-orange {
+    background-color: #f0ad4e;
+}
+
+.bg-pink {
+    background-color: #d63384;
+}
+
+.bg-teal {
+    background-color: #20c997;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+
+.w-100 {
+    width: 55% !important;
+}
+
+.log__out {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    /* padding: 20px; */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logo span {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dashboard__container {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.charts__section {
+    margin-bottom: 50px;
+}
+
+.menu-btn {
+    /* font-size: 18px; */
+    cursor: pointer;
+    background-color:#ECF4FF;
+    color:#007bff;
+    padding: 10px 20px;
+    border: solid transparent;
+    /* border-radius: 10px; */
+    /* position: fixed; */
+    top: 15px;
+    left: 20px;
+    z-index: 100; /* Higher than sidebar */
+    display: none; /* Hidden by default, shows on smaller screens */
+}
+
+/* Sidebar menu styles */
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 20px;
+    z-index: 101; /* Ensure sidebar is above menu button */
+}
+
+.menu-btn span{
+    color: #007bff;
+}
+
+/* Heading inside the menu */
+.menu-heading {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+/* Menu options styles */
+.menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Display menu button on screens 460px and smaller */
+@media (max-width: 460px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+/* @media (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+} */
+
+@media (max-width: 900px) {
+    .card h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 82px;
+        height: auto;
+        padding-left: 0;
+
+    }
+
+    .nav-link p {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .log__out p{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .header {
+        position: static;
+        width: 100%;
+    }
+
+    .dashboard__container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    /* .sidebar{
+        width: 250px;
+    }
+    .header{
+        width: calc(100% - 250px);
+        left: 250px;
+    } */
+}
+
+
+@media (max-width: 765px) {
+    .card {
+        margin-left: 20%;
+        max-width:80% ;
+    }
+    .nav-link{
+        /* padding-bottom: 0 ; */
+        /* padding-top: 0 ; */
+        /* padding: 0;   */
+        font-size: 18px;
+    }
+    .logo span{
+        padding-left: 5px;
+        margin-bottom: 5px;
+        padding:0;
+        margin-left: 5px;
+    }
+    .fs-4{
+        font-size: calc(14px + .3vw) !important;
+    }
+    .log__out{
+        margin-left: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+    .nav__notification{
+        padding: 6px;
+    }
+    .profile__section{
+        padding: 5px 10px   ;
+    }
+}
+
+@media (max-width: 460px){
+    .nav__notification{
+        padding: 4px;
+    }
+    .profile__section{
+        padding: 0;
+    }
+    #profileDropdown{
+        padding: 2px;
+    }
+
+    .menu-btn{
+        height: 70px;
+    }
+    .card {
+        width: 80%;
+        margin-left: 0%;
+    }
+    .charts__section{
+        padding-left:calc(var(--bs-gutter-x) * -0.5);
+    }
+}
+
+
+ 

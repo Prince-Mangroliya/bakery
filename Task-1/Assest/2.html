@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/2.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>My Products</h3>
+    <!-- <div class="d-flex mb-4"> -->
+      <input type="text" class="form-control mr-2" placeholder="Search Here">
+      <select class="form-control">
+        <option>Select Category</option>
+        <option>Category 1</option>
+        <option>Category 2</option>
+      </select>
+    <!-- </div> --> 
+    <button class="btn btn-primary"><i class="fas fa-plus"></i> Add Product</button>
+  </div>
+
+  <!-- Search and Category Filter -->
+
+  <!-- Product Table -->
+  <div class="table-responsive table__container">
+    <table class="table table-borderless table-hover">
+      <thead class="thead">
+        <tr>
+          <th>Product Name</th>
+          <th>Dimension</th>
+          <th>Weight</th>
+          <th>Available Stock</th>
+          <th>Buy Price</th>
+          <th>Sell Price</th>
+          <th>Stock Level</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="trin">
+          <td><img src="./image/Rectangle 2236.png" class="product-img mr-2"> Large Toy Boxes For Kids</td>
+          <td>24 x 18 x 18 inch</td>
+          <td>250 g</td>
+          <td>1500 Boxes</td>
+          <td>₹500</td>
+          <td>₹500 - ₹800</td>
+          <td><span class="badge badge-success">Full</span></td>
+          <td>
+            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+            <td><img src="./image/Rectangle 2236.png" class="product-img mr-2"> AC Boxes</td>
+            <td>24 x 18 x 18 inch</td>
+            <td>250 g</td>
+            <td>500 Boxes</td>
+            <td>₹600</td>
+            <td>₹600 - ₹900</td>
+            <td><span class="badge badge-primary">Full</span></td>
+            <td>
+              <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./image/Rectangle 2236.png" class="product-img mr-2"> Toy Boxes</td>
+            <td>24 x 18 x 18 inch</td>
+            <td>250 g</td>
+            <td>100 Boxes</td>
+            <td>₹700</td>
+            <td>₹700 - ₹900</td>
+            <td><span class="badge badge-danger">Full</span></td>
+            <td>
+              <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./image/Rectangle 2236.png" class="product-img mr-2"> Large Toy Boxes For Kids</td>
+            <td>24 x 18 x 18 inch</td>
+            <td>250 g</td>
+            <td>1500 Boxes</td>
+            <td>₹800</td>
+            <td>₹800 - ₹900</td>
+            <td><span class="badge badge-success">Full</span></td>
+            <td>
+              <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        <!-- Repeat rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
